@@ -9,8 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "API para módulo de notificações por e-mail de uma plataforma de eventos.\r ## Como rodar\r 1. Clone o repositório\r 2. Execute `npm install`\r 3. Execute `npm start`\r 4. Acesse `http://localhost:3000`\r ## Tecnologias\r - Node.js\r - Express.js",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
