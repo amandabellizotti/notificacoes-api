@@ -1,9 +1,15 @@
 // src/app.js
 const express = require("express");
+const swaggerUi = require("swagger-ui-express");
+const swaggerSpec = require("./swagger");
+
 const app = express();
 
 // Middleware para ler JSON no body das requisições
 app.use(express.json());
+
+// Documentação Swagger 
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Importando as rotas de eventos
 const eventoRoutes = require("./routes/eventoRoutes");

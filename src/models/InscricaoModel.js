@@ -42,7 +42,7 @@ function listarTodas() {
     return inscricoes;
 }
 
-// Cancelar uma inscrição
+// Cancelar uma inscrição/mas não vou deletá-la do banco
 function cancelar(id) {
     const index = inscricoes.findIndex((i) => i.id === id);
     if (index === -1) return null;
