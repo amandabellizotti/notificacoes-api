@@ -6,7 +6,7 @@ let participantes = [
 ];
 
 let proximoId = 4;
-// 👇 Implemente as funções abaixo seguindo o padrão do EventoModel
+// Implemente as funções abaixo seguindo o padrão do EventoModel
 function listarTodos() {
     return participantes;
 }
